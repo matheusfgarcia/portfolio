@@ -4,7 +4,7 @@ export const initialState = {
   isFlipped: false,
 }
 
-export const cardReducer = (state = initialState, action) => {
+export const cardReducer = (state = initialState, action: any) => {
   
   let response = action.payload;
 
