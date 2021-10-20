@@ -84,7 +84,7 @@ export const CardComponent = ( { getCardState, getActivePage, flipCard } : {  ge
             </div>
             <div className="wrapper-item">
               My name is Matheus Garcia.<br/>
-              I'm a <b>Senior Software Engineer</b> and a <b>game lover</b>
+              I'm a <b>Senior Software Engineer</b> and a <b>game lover</b>.
               <br /><br />
               <Button className="flip" value="Work Experience" page="experience"/>
               <Button className="flip" value="Skills" page="skill" />
