@@ -55,7 +55,7 @@ export const PageSkill = () => {
     <Page>
       <ul>
         <Section>
-          <Title>Backend</Title>
+          <Title>BackEnd</Title>
           <div>
             <Block>
               <Image src="./php.png" /> PHP
