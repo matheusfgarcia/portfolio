@@ -7,7 +7,7 @@ import { getCardState } from '../../selectors/card'
 import { getActivePage } from '../../selectors/page'
 
 
-export const mapDispatchToProps = dispatch => bindActionCreators({
+export const mapDispatchToProps = (dispatch: any) => bindActionCreators({
   flipCard: flipCard,
 }, dispatch)
 

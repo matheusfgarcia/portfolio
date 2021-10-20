@@ -4,7 +4,7 @@ export const initialState = {
   active: null,
 }
 
-export const pageReducer = (state = initialState, action) => {
+export const pageReducer = (state = initialState, action: any) => {
   
   let response = action.payload;
 

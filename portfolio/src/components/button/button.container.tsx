@@ -4,7 +4,7 @@ import { ButtonComponent } from './button.component'
 import { flipCard } from '../../actions/card'
 import { activePage } from '../../actions/page'
 
-export const mapDispatchToProps = dispatch =>
+export const mapDispatchToProps = (dispatch: any) =>
   bindActionCreators(
     {
       flipCard: flipCard,
