@@ -26,6 +26,16 @@ const Block = styled.li`
     display: flex;
     flex-direction: column;
   }
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    div {
+      margin: 10px 0;
+    }
+  }
 `;
 
 const Image = styled.img<{src: string;}>`
@@ -41,6 +51,14 @@ const Page = styled.section`
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
   }
 `;
 
