@@ -16,6 +16,12 @@ const ButtonStyled = styled.button<{className: string; onClick: ()=> void}>`
         background: palevioletred;
         color: white;
       }
+
+    @media only screen and (max-width: 1024px) {
+      display: block;
+      margin: 10px auto;
+    }
+
     `;
 
 export const ButtonComponent = ({

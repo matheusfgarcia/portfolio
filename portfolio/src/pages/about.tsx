@@ -10,7 +10,7 @@ const Block = styled.li`
     text-decoration: none;
     color: inherit;
   }
-
+  
   span {
     display:block;
     margin: 0 15px;
@@ -41,7 +41,7 @@ export const PageAbout = () => {
     <Page>
       <p>I'm Matheus Garcia, Brazilian living in Portugal.</p>
       <p>I work with web development since 2011.</p>
-      <p>I'm affictionated in solve problems, and make others life better.</p>
+      <p>I'm passionate to solve problems, and make others life better.</p>
       <Block>
           <a href="https://medium.com/@matheus.mfgarcia"><Image src="./medium.png" /> <span>Medium</span></a>
           <a href="https://github.com/matheusfgarcia"><Image src="./github.png" /> <span>Github</span></a>

@@ -11,6 +11,14 @@ const Page = styled.section`
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+
+
+  @media only screen and (max-width: 1024px) {
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+  }
 `;
 
 
@@ -25,6 +33,7 @@ const Block = styled.li`
     display: flex;
     flex-direction: column;
   }
+  
 `;
 
 const Title = styled.span<{className?: string;}>`
@@ -42,6 +51,13 @@ const Section = styled.section<{className?: string;}>`
     width: 100%;
     display: inline-flex;
     justify-content: center;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    div {
+      display: flex;
+      flex-direction: column;
+    }
   }
 `;
 
