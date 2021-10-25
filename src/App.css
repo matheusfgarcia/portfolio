@@ -44,13 +44,10 @@ html,body {
 
   .front, .back {
     margin: 2em;
-    max-height: 35em;
-  }
-
-  .front section, .back section {
+    max-height: 27em;
     overflow: scroll;
   }
-
+  
   .front .wrapper {
     flex-direction: column;
     

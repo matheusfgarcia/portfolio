@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-
-
 const Page = styled.section`
   text-align: left;
 
@@ -21,19 +19,19 @@ const Page = styled.section`
   }
 `;
 
-
 const Block = styled.li`
   display: flex;
   flex-direction: column; 
   align-items: center;
-  margin: 0 30px;
+  margin: 0 30px;  
 
-  div {
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
+  img {
+    margin: 0 0 5px 0; 
   }
-  
+
+  @media only screen and (max-width: 1024px) {
+    margin: 10px 25px 
+  }
 `;
 
 const Title = styled.span<{className?: string;}>`
@@ -66,6 +64,15 @@ const Image = styled.img<{src: string;}>`
   height:45px;
 `;
 
+
+const SkillBlock = ( { src, text } : { src: string, text: string } ) => {
+  return (
+    <Block>
+      <Image src={src} /> {text}
+    </Block>
+  )
+}
+
 export const PageSkill = () => {
   return (
     <Page>
@@ -73,67 +80,39 @@ export const PageSkill = () => {
         <Section>
           <Title>BackEnd</Title>
           <div>
-            <Block>
-              <Image src="./php.png" /> PHP
-            </Block>
-            <Block>
-              <Image src="./kotlin.jpeg" /> Kotlin
-            </Block>
-            <Block>
-              <Image src="./ruby.png" /> Ruby
-            </Block>
-            <Block>
-              <Image src="./node.png" /> 
-              <span>Node</span>
-            </Block>
+            <SkillBlock src="./images/php.png" text="PHP"/>
+            <SkillBlock src="./images/kotlin.jpeg" text="Kotlin"/>
+            <SkillBlock src="./images/ruby.png" text="Ruby"/>
+            <SkillBlock src="./images/node.png" text="Node"/>
           </div>
         </Section>
         <hr/>
         <Section>
           <Title>FrontEnd</Title>
           <div>
-            <Block>
-              <Image src="./js.png" /> Javascript
-            </Block>
-            <Block>
-              <Image src="./react.png" /> React
-            </Block>
-            <Block>
-              <Image src="./sass.png" /> Sass
-            </Block>
+            <SkillBlock src="./images/js.png" text="Javascript"/>
+            <SkillBlock src="./images/react.png" text="React"/>
+            <SkillBlock src="./images/sass.png" text="Sass"/>
           </div>
         </Section>
         <hr/>
         <Section>
           <Title>Storage</Title>
           <div>
-            <Block>
-              <Image src="./mysql.png" /> MySQL
-            </Block>
-            <Block>
-              <Image src="./postgres.png" /> PostgreSQL
-            </Block>
-            <Block>
-              <Image src="./mongo.png" /> MongoDB
-            </Block>
-            <Block>
-              <Image src="./rabbitmq.png" /> RabbitMQ
-            </Block>
-            <Block>
-              <Image src="./kafka.png" /> Kafka
-            </Block>
+
+            <SkillBlock src="./images/mysql.png" text="Javascript"/>
+            <SkillBlock src="./images/postgres.png" text="PostgreSQL"/>
+            <SkillBlock src="./images/mongo.png" text="MongoDB"/>
+            <SkillBlock src="./images/rabbitmq.png" text="RabbitMQ"/>
+            <SkillBlock src="./images/kafka.png" text="Kafka"/>
           </div>
         </Section>
         <hr/>
         <Section>
           <Title>Other</Title>
           <div>
-            <Block>
-              <Image src="./github.png" /> GitHub
-            </Block>
-            <Block>
-              <Image src="./aws.png" /> AWS
-            </Block>
+            <SkillBlock src="./images/github.png" text="GitHub"/>
+            <SkillBlock src="./images/aws.png" text="AWS"/>
           </div>
         </Section>
       </ul>

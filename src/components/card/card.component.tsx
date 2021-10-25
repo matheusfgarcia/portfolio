@@ -8,7 +8,6 @@ import { useLayoutEffect, useRef, useState } from 'react'
 
 const CardStyled = styled.section<{className: string;}>`
   width: 35em;
-  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -35,11 +34,6 @@ export const CardComponent = ( { getCardState, getActivePage, flipCard } : {  ge
   if (getCardState) {
     activeCard += ' active';
   }
-
-  const sizing = {
-    height: '120px'
-  };
-
   
   const [activePage, setActivePage] = useState<any>(null);
 
@@ -76,7 +70,7 @@ export const CardComponent = ( { getCardState, getActivePage, flipCard } : {  ge
     
 
   return (
-    <CardStyled className={"card" + activeCard} style={sizing}>
+    <CardStyled className={"card" + activeCard}>
       <div className="front">
           <div className="wrapper">
             <div className="wrapper-item">
