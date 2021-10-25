@@ -43,9 +43,9 @@ export const PageAbout = () => {
       <p>I work with web development since 2011.</p>
       <p>I'm passionate to solve problems, and make others life better.</p>
       <Block>
-          <a href="https://medium.com/@matheus.mfgarcia"><Image src="./medium.png" /> <span>Medium</span></a>
-          <a href="https://github.com/matheusfgarcia"><Image src="./github.png" /> <span>Github</span></a>
-          <a href="https://www.linkedin.com/in/matheusgarcia/"><Image src="./linkedin.png" /> <span>LinkedIn</span></a>
+          <a href="https://medium.com/@matheus.mfgarcia"><Image src="./images/medium.png" /> <span>Medium</span></a>
+          <a href="https://github.com/matheusfgarcia"><Image src="./images/github.png" /> <span>Github</span></a>
+          <a href="https://www.linkedin.com/in/matheusgarcia/"><Image src="./images/linkedin.png" /> <span>LinkedIn</span></a>
       </Block>
     </Page>  
   )

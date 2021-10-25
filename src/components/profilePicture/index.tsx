@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const ProfilePicture = styled.div`
-  background-image: url(./me.png);
+  background-image: url(./images/me.png);
   width: 125px;
   height: 125px;
   background-position: 189px 212px;
