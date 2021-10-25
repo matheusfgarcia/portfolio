@@ -9,10 +9,22 @@ import { useLayoutEffect, useRef, useState } from 'react'
 const CardStyled = styled.section<{className: string;}>`
   width: 35em;
   text-align: center;
-  display: flex;
   flex-direction: column;
+
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  display: flex;
+  display: -webkit-flex;
   justify-content: center;
+  -webkit-justify-content: center;
+  align-content: center;
+  -webkit-align-content: center;
   align-items: center;
+  -webkit-align-items: center;
 
   .back {
     button {
